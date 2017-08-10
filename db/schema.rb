@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20170810010107) do
     t.string "title"
     t.text "field"
     t.string "key_skill"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
