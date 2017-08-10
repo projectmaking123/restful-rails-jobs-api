@@ -21,6 +21,12 @@ module Api
         end
       end
 
+      def destroy
+        job = Job.find_by(id: params[:id])
+        job.destroy
+        render json: {status: 'Success', message: 'removed job', data:job}, status: :ok
+      end
+
       private
 
       def job_params
