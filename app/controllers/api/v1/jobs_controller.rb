@@ -2,19 +2,19 @@ module Api
   module V1
     class JobsController < ApplicationController
       def index
-        jobs = Job.order('created_at DESC')
-        render json: {status: 'Success', message: 'loaded jobs', data:jobs}, status: :ok
+        @jobs = Job.order('created_at DESC')
+        render :index, status: :ok
       end
 
       def show
-        job = Job.find_by(id: params[:id])
-        render json: {status: 'Success', message: 'loaded job', data:job}, status: :ok
+        @job = Job.find_by(id: params[:id])
+        render :show, status: :ok
       end
 
       def create
-        job = Job.new(job_params)
-        if job.save
-          render json: {status: 'Success', message: 'saved job', data: job}, status: :ok
+        @job = Job.new(job_params)
+        if @job.save
+          render :create, status: :ok
         else
           render json: {status: 'Error', message: 'not saved', data: job.errors},
           status: :unprocessable_entity
@@ -22,9 +22,9 @@ module Api
       end
 
       def update
-        job = Job.find_by(id: params[:id])
-        if job.update_attributes(job_params)
-          render json: {status: 'Success', message: 'updated', data:job}, status: :ok
+        @job = Job.find_by(id: params[:id])
+        if @job.update_attributes(job_params)
+          render :update, status: :ok
         else
           render json: {status: 'Error', message: 'not updated', data:job},
           status: :unprocessable_entity
