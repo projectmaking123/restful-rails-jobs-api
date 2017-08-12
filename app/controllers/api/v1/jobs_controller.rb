@@ -12,7 +12,7 @@ module Api
       end
 
       def create
-        @job = Job.new(job_params)
+        @job = current_user.jobs.build(job_params)
         if @job.save
           render :create, status: :ok
         else
@@ -22,7 +22,7 @@ module Api
       end
 
       def update
-        @job = Job.find_by(id: params[:id])
+        @job = current_user.jobs.where(id: params[:id]).first
         if @job.update_attributes(job_params)
           render :update, status: :ok
         else
