@@ -15,6 +15,7 @@ gem 'puma', '~> 3.7'
 gem 'rack-cors', '~> 0.3.1'
 gem 'faker'
 gem 'devise'
+gem 'simple_token_authentication'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production

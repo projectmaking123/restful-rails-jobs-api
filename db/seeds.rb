@@ -8,3 +8,5 @@
     description: Faker::Lorem.paragraph(2, true)
     })
 end
+
+User.create(email: 'test@gmail.com', password: 'password', password_confirmation: 'password')
