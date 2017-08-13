@@ -1,5 +1,4 @@
-
-User.create(email: 'test@gmail.com', password: 'password', password_confirmation: 'password')
+User.create(email: "jasonw4dev@gmail.com", password: "password", password_confirmation: "password", confirmed_at: DateTime.now)
 
 10.times do
   Job.create({
