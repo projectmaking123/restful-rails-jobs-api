@@ -32,7 +32,6 @@ Layout/EmptyLines:
     - 'bin/setup'
     - 'config/environments/development.rb'
     - 'config/environments/production.rb'
-    - 'db/migrate/20170812160644_devise_create_users.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -123,10 +122,6 @@ Style/Documentation:
     - 'app/models/user.rb'
     - 'config/application.rb'
     - 'db/migrate/20170810010107_create_jobs.rb'
-    - 'db/migrate/20170812160644_devise_create_users.rb'
-    - 'db/migrate/20170812163539_add_authentication_token_to_users.rb'
-    - 'db/migrate/20170812214839_add_user_id_to_jobs.rb'
-    - 'db/migrate/20170813144636_add_confirmable_to_devise.rb'
 
 # Offense count: 1
 # Cop supports --auto-correct.
@@ -152,7 +147,6 @@ Style/StringLiterals:
     - 'config/application.rb'
     - 'config/environments/production.rb'
     - 'config/puma.rb'
-    - 'db/migrate/20170812160644_devise_create_users.rb'
     - 'db/schema.rb'
 
 # Offense count: 4

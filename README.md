@@ -23,6 +23,5 @@ Things you may want to cover:
 
 * ...
 
-devise
 simple token
 jbuilder

@@ -1,6 +1,10 @@
 json.data do
   json.user do
-    json.id @user.id
-    json.email @user.email
+    json.call(
+      @user,
+      :id,
+      :email,
+      :uid
+    )
   end
 end
