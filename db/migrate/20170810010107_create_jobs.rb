@@ -5,7 +5,7 @@ class CreateJobs < ActiveRecord::Migration[5.1]
       t.string :field
       t.string :key_skill
       t.text :description
-      t.references :user
+      t.string :uid
 
       t.timestamps
     end
