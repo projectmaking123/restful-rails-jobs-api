@@ -12,6 +12,7 @@ module Api
       end
 
       def create
+        current_user = User.find_by(email: params[:email])
         @job = current_user.jobs.build(job_params)
         if @job.save
           render :create, status: :ok
@@ -40,7 +41,7 @@ module Api
       private
 
       def job_params
-        params.permit(:title, :field, :key_skill, :description)
+        params.permit(:title, :field, :key_skill, :description, :email)
       end
 
     end
