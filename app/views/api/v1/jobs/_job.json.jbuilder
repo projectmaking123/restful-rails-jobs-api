@@ -4,5 +4,7 @@ json.call(
   :title,
   :field,
   :key_skill,
-  :description
+  :description,
+  :contact,
+  :uid
 )

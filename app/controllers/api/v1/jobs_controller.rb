@@ -40,7 +40,7 @@ module Api
       private
 
       def job_params
-        params.permit(:title, :field, :key_skill, :description, :uid)
+        params.permit(:title, :field, :key_skill, :description, :contact, :uid)
       end
 
     end
