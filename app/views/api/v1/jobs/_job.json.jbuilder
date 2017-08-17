@@ -7,5 +7,6 @@ json.call(
   :description,
   :contact,
   :location,
-  :uid
+  :uid,
+  :created_at
 )

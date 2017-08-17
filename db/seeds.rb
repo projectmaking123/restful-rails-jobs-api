@@ -6,7 +6,7 @@
     key_skill: Faker::Job.key_skill,
     description: Faker::Lorem.paragraphs(sentence_count=8, 2),
     contact: Faker::Internet.email,
-    location: Faker::Address.city,
+    location: "New York City",
     uid: "Em2bv95Q2eMI3IHRANcV1VRQllx1"
   })
 end
