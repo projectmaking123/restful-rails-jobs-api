@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20170810010107) do
     t.string "key_skill"
     t.text "description"
     t.string "contact"
+    t.string "location"
     t.string "uid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

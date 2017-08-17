@@ -1,3 +1,3 @@
 class Job < ApplicationRecord
-  validates :title, :field, :key_skill, :description, :uid, presence: true
+  validates :title, :field, :key_skill, :description, :location, :uid, presence: true
 end

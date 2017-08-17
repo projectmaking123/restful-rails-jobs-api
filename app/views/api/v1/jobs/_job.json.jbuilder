@@ -6,5 +6,6 @@ json.call(
   :key_skill,
   :description,
   :contact,
+  :location,
   :uid
 )
