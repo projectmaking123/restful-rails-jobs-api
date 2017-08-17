@@ -8,5 +8,6 @@ json.call(
   :contact,
   :location,
   :uid,
+  :applicants,
   :created_at
 )
