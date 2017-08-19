@@ -1,5 +1,5 @@
 
-10.times do
+50.times do
   Job.create({
     title: Faker::Job.title,
     field: Faker::Job.field,
