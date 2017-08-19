@@ -7,16 +7,16 @@ clone the repository
 
 bundle install
 
-##Copy the following line to create database
+## Copy the following line to create database
 
 rails db:create db:migrate db:seed
 
 
-##Use postman to make restful api calls
+## Use postman to make restful api calls
 
 example: http://localhost:3000/api/v1/jobs will return all jobs in the database in a json format.
 
-##Technology/Schema
+## Technology/Schema
 
 The back-end server is hosted on Heroku:  https://jason-jobs-bacon.herokuapp.com.
 
